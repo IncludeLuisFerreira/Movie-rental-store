@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: rgb(34, 40, 49);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo-img {
+    text-align: left;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+header .titulo {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 70px;
+    font-family: monospace;
+    color: orange;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #2e2e2e;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+.conteudo {
+    width: 80%;
+    padding: 20px;
+}
+
+.categoria {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categoria a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.categoria a:hover {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.filmes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.filmes img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.filmes p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin-top: 20px;
+    border-top: 3px solid #007bff;
+}

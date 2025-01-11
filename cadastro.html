@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="index.html" method="get">
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome">
+
+            <label for="endereço">Endereço</label>
+            <input type="text" name="endereço">
+
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="e-mail" placeholder="exemplo@gmail.com">
+            
+
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade">
+            
+
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg" selected>Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+            </select>
+
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" value="M">Masculino
+            <input type="radio" name="sexo" value="F">Feminino
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências do usuário</legend>
+            
+            <p>Escolha os gêneros de filme que você gosta:</p>
+
+            <label for="genero-filme">
+                <input type="checkbox" name="acao" id="acao">Ação
+                <input type="checkbox" name="aventura" id="aventura">Aventura
+                <input type="checkbox" name="comedia" id="comedia">Comédia
+                <input type="checkbox" name="suspense" id="suspense">Suspense
+                <input type="checkbox" name="drama" id="drama">Drama
+                <input type="checkbox" name="romance" id="romance">Romance
+                <input type="checkbox" name="terror" id="terror">Terror
+            </label>
+
+            <label for="nickname">Nickname</label>
+            <input type="text" placeholder="Esolha seu nickname">
+
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Escolha sua senha">
+        </fieldset>
+
+        <input class="u-button" type="submit" value="Cadastrar">
+        <input class="u-button" type="reset" value="Limpar">
+    </form>
+    
+    <a href="index.html">Voltar</a>
+    
+</body>
+</html>

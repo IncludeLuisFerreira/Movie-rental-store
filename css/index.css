@@ -1,0 +1,88 @@
+/* Reseta margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+    justify-content: flex-start; /* Alinha os itens no topo */
+    width: 500px; /* Aumenta a largura do formulário */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Cada div contém o label e o input na mesma linha */
+fieldset > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+fieldset > div > label {
+    margin-right: 10px; /* Espaço entre label e input */
+    width: 100px; /* Largura do label */
+}
+
+fieldset > div > input {
+    width: calc(100% - 110px); /* Preenche o espaço restante ao lado do label */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Ajusta a exibição dos links */
+.button {
+    display: block; /* Flexbox para organizar os botões */
+    justify-content: space-between; /* Garante que os botões fiquem lado a lado */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço entre o formulário e os botões */
+}
+
+.button a {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 200px; /* Largura fixa para os botões */
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+.button a:hover {
+    background-color: #003f7d;
+    text-decoration: underline;
+}
