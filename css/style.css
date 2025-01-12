@@ -73,3 +73,18 @@ main {
     width: 80%;
     padding: 20px;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-top: 3px solid #007bff;
+}
+
+footer p {
+    margin: 0;
+}

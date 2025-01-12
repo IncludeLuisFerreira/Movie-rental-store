@@ -39,7 +39,7 @@ aside {
     width: 10%;
     min-height: 660px;
     background-color: #2e2e2e;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -72,6 +72,11 @@ aside {
     margin-top: 20px;
     margin-left: 20px;
     width: 70%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+
 }
 
 .capafilme {
@@ -87,7 +92,6 @@ aside {
 .desc {
     flex: 1;
     max-width: 60%;
-    
 }
 
 h3, p {
@@ -106,4 +110,42 @@ footer {
     color: #fff;
     margin-top: 20px;
     border-top: 3px solid #007bff;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .espec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .capafilme {
+        width: 100%;
+        margin-right: 0;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .desc {
+        max-width: 100%;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }

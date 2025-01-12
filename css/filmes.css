@@ -113,13 +113,16 @@ main {
 
 .filmes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
 }
 
 .filmes img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -138,10 +141,12 @@ main {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 20px;
     background-color: #1e1e1e;
     color: #fff;
-    margin-top: 20px;
     border-top: 3px solid #007bff;
 }

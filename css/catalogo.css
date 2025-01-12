@@ -22,6 +22,8 @@ header .logo-img {
     text-align: left;
     margin-bottom: 10px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 header .logo {
@@ -44,15 +46,24 @@ header h1 {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
 .sidebar {
-    width: 20%;
+    width: 100%;
     background-color: #2e2e2e;
     padding: 20px;
     color: #fff;
     border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 20%;
+        margin-bottom: 0;
+    }
 }
 
 .sidebar ul {
@@ -78,8 +89,14 @@ main {
 }
 
 .conteudo {
-    width: 80%;
+    width: 100%;
     padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .conteudo {
+        width: 80%;
+    }
 }
 
 .categoria {
@@ -104,15 +121,18 @@ main {
 
 .filmes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
 }
 
 .filmes img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
-    border-radius: 8px;
+    border-radius: px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
