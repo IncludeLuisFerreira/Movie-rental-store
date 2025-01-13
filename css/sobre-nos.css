@@ -19,10 +19,11 @@ header {
     text-align: center;
 }
 
-header .logo {
-    text-align: left;
-    margin-bottom: 10px;
-    display: flex;
+header img {
+    margin: 10px auto;
+    max-width: 60%;
+    height: auto;
+    display: block;
 }
 
 header .titulo {
@@ -39,9 +40,9 @@ header h1 {
 }
 
 .sidebar {
-    width: 100%;
+    width: 20%;
     background-color: #2e2e2e;
-    padding: 20px;
+    padding: 5px;
     color: #fff;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -89,6 +90,10 @@ main {
     flex: 1;
     max-width: 80%;
     align-items: flex-start;
+    padding-top: 5px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .devname {
@@ -127,3 +132,40 @@ main {
 .content p {
     margin-bottom: 20px;
 }
+
+@media (max-width: 875px) {
+    main {
+        margin: 0;
+    }
+
+    .devimg {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #707375;
+        text-align: center;
+        border-right: 0;
+        padding-right: 0;
+
+    }
+    
+    .devinfo {
+        display: block;
+
+    }
+
+    .devname {
+        display: inline-block;
+        text-align: left;
+        margin: 0;
+    }
+
+    .content p {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .icons img {
+        width: 45px;
+        height: auto;
+    }
+ }
+ 

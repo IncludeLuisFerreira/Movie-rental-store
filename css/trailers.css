@@ -35,7 +35,7 @@ header h1 {
 .sidebar {
     width: 20%;
     background-color: #2e2e2e;
-    padding: 20px;
+    padding: 5px;
     color: #fff;
     border-radius: 8px;
 }
@@ -82,7 +82,7 @@ main {
 
 .content h2 {
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: #333;
     border-top: 1px solid rgb(194, 184, 184);
 }
@@ -110,5 +110,9 @@ footer p {
     margin: 0;
 }
 
-
+@media (max-width: 875px) {
+   main {
+    margin: 0;
+   }
+}
 

@@ -157,3 +157,17 @@ footer {
 footer p {
     margin: 0;
 }
+
+@media (max-width: 875px) {
+    main {
+        margin: 2px;
+    }
+
+    input[type="text"],input[type="email"],input[type="password"],select {
+        width: 80%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
