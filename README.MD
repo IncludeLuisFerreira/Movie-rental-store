@@ -4,4 +4,4 @@
 
 O projeto consiste na criação de uma simulação de locadora de vídeo online desenvolvido em HTML5 e CSS3. O site deveria ter categorias de filmes, trailers, trilhas sonoras, contato e sobre os desenvolvedores.
 
-Todo o projeto foi desenvolvido individualmente.
+Todo o projeto foi desenvolvido individualmente.Link: [https://includeluisferreira.github.io/Movie-rental-store/]
